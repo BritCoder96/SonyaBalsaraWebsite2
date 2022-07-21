@@ -2,12 +2,12 @@
 @import 'bootstrap/variables';
 
 $font-primary: 'Rubik',Arial, sans-serif;
-$font-secondary: 'Josefin Sans',Arial, sans-serif;
+$font-secondary: 'new-york',Arial, sans-serif;
 
 $white: #fff;
 $black: #000;
 $darken: #4a5562;
-$primary: #6fa887;
+$primary: #5c8774;
 
 html {
 }
@@ -114,7 +114,7 @@ strong{
 		padding: 0!important;
 		visibility: hidden;
 		opacity: 0;
-		color: #6fa887;
+		color: #5c8774;
 		@include transition(.3s);
 		i {
 			top: 18px!important;
