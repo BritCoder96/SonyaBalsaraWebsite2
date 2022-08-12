@@ -7470,6 +7470,17 @@ strong {
           -ms-transform: scaleX(1);
           -o-transform: scaleX(1);
           transform: scaleX(1); }
+.navbar-logo-index {
+  color: #5c8774 !important;
+}
+
+@media (max-width: 767.98px) {
+  .navbar-logo-index {
+    color: #fff !important;
+    margin-bottom: 20px;
+    padding-left:20px;
+  }
+}
 
 header {
   padding: 2em 0;
