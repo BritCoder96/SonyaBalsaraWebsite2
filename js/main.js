@@ -50,11 +50,16 @@ $(document).ready(function($) {
 				$('#colorlib-main-nav > .js-colorlib-nav-toggle').removeClass('show');
 			} else {
 				$('body').addClass('menu-show');
-				setTimeout(function(){
-					$('#colorlib-main-nav > .js-colorlib-nav-toggle').addClass('show');
-				}, 900);
+				$('#colorlib-main-nav > .js-colorlib-nav-toggle').addClass('show');
 			}
-		})
+		});
+		var siteBody = $('body');
+		siteBody.on('click', function(e){
+		    if( !$(e.target).is('.colorlib-main-nav, .js-colorlib-nav-toggle, .colorlib-table, .colorlib-table-cell') && !($(e.target).is('.js-colorlib-nav-toggle i'))) {
+		        $('#colorlib-main-nav > .js-colorlib-nav-toggle').removeClass('show');
+		        $('body').removeClass('menu-show');
+		    }
+		});
 	};
 	burgerMenu();
 	
